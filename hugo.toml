@@ -13,6 +13,12 @@ theme = 'PaperMod'
   ShowRssButtonInSectionTermList = true
   ShowWordCount = true
   ShowFullTextinRSS = true
+  search = true
+  [params.search]
+    index = "search.json"
+    maxResults = 10
+    highlight = true
+    threshold = 0.3
 
 [menu]
   [[menu.main]]
@@ -30,3 +36,8 @@ theme = 'PaperMod'
     name = "分类"
     url = "/categories/"
     weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
