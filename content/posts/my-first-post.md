@@ -3,6 +3,7 @@ title: "我的第一篇博客文章"
 date: 2024-03-20T10:00:00+08:00
 draft: false
 categories: ["随笔"]
+tags: ["博客", "Hugo"]
 ---
 
 # 欢迎来到我的博客
