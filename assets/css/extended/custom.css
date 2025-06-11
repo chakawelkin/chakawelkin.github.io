@@ -2,17 +2,14 @@
 .post-entry {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+    position: relative;
 }
 
 .post-entry article {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
-    flex: 1;
+    padding-right: 150px;
 }
 
 .post-entry article:last-child {
@@ -41,7 +38,9 @@
 
 /* 标签样式 */
 .post-tags {
-    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
