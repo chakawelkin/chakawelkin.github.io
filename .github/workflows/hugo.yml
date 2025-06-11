@@ -49,4 +49,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages 
+          publish_branch: gh-pages
+          commit_message: "Deploy Hugo site to Pages"
+          force_orphan: true 
