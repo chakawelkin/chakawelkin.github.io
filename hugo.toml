@@ -35,6 +35,46 @@ defaultContentLanguageInSubdir = false
     # 搜索匹配阈值（0-1之间，越小越精确）
     threshold = 0.3
 
+  # 文章列表样式
+  [params.list]
+    # 显示文章摘要
+    ShowSummary = true
+    # 显示阅读时间
+    ShowReadingTime = true
+    # 显示文章日期
+    ShowDate = true
+    # 显示文章作者
+    ShowAuthor = false
+    # 显示文章字数
+    ShowWordCount = true
+    # 显示文章分类
+    ShowCategories = true
+    # 显示文章标签
+    ShowTags = true
+
+  # 文章页面样式
+  [params.page]
+    # 显示文章目录
+    ShowToc = true
+    # 显示文章分享按钮
+    ShowShareButtons = true
+    # 显示文章导航
+    ShowPostNavLinks = true
+    # 显示文章面包屑
+    ShowBreadCrumbs = true
+    # 显示文章字数
+    ShowWordCount = true
+    # 显示文章阅读时间
+    ShowReadingTime = true
+    # 显示文章作者
+    ShowAuthor = false
+    # 显示文章日期
+    ShowDate = true
+    # 显示文章分类
+    ShowCategories = true
+    # 显示文章标签
+    ShowTags = true
+
 [menu]
   [[menu.main]]
     identifier = "posts"
