@@ -81,6 +81,13 @@ defaultContentLanguageInSubdir = false
     lastmod = "2006年01月02日"
     readingTime = "预计阅读 %d 分钟"
 
+  # 隐藏主题信息
+  [params.footer]
+    since = 2024
+    customText = ""
+    powered = false
+    theme = false
+
 [menu]
   [[menu.main]]
     identifier = "posts"
