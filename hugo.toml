@@ -7,6 +7,10 @@ theme = 'PaperMod'
 defaultContentLanguage = 'zh-cn'
 defaultContentLanguageInSubdir = false
 
+# 添加输出格式配置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -55,7 +59,3 @@ defaultContentLanguageInSubdir = false
 [params.homeInfoParams]
   Title = "欢迎来到我的博客"
   Content = "这是一个使用 Hugo 和 PaperMod 主题创建的博客。"
-
-# 添加输出格式配置
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
