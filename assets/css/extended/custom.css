@@ -47,24 +47,29 @@
     gap: 0.3rem;
     min-width: 120px;
     justify-content: flex-end;
+    align-items: center;
+    color: var(--secondary);
+    font-size: 0.75rem;
+}
+
+.post-tags::before {
+    content: "🏷️";
+    margin-right: 0.2rem;
 }
 
 .post-tags a {
-    display: inline-block;
-    padding: 0.05rem 0.3rem;
-    background: transparent;
-    border: 1px solid var(--border);
-    border-radius: 2px;
     color: var(--secondary);
     text-decoration: none;
-    font-size: 0.75rem;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.post-tags a:not(:last-child)::after {
+    content: ",";
+    margin-right: 0.2rem;
 }
 
 .post-tags a:hover {
-    background: var(--accent);
-    color: var(--entry);
-    border-color: var(--accent);
+    color: var(--accent);
 }
 
 /* 导航栏样式 */
