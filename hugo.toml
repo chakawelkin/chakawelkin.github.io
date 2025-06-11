@@ -88,6 +88,10 @@ defaultContentLanguageInSubdir = false
     powered = false
     theme = false
 
+  ShowFooter = false
+  ShowPoweredBy = false
+  ShowThemeInfo = false
+
 [menu]
   [[menu.main]]
     identifier = "posts"
