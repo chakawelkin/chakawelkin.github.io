@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "gh-pages"]
   workflow_dispatch:
 
 permissions:
@@ -43,4 +43,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          commit_message: "Deploy Hugo site to Pages" 
+          commit_message: "Deploy Hugo site to Pages"
+          force_orphan: true 
