@@ -1,0 +1,28 @@
+{{- if .Site.Params.avatar }}
+{{- $avatar := .Site.Params.avatar }}
+{{- $avatar := (trim $avatar "/") | absURL }}
+<div class="avatar">
+    <a href="{{ .Site.BaseURL }}">
+        <img src="{{ $avatar }}" alt="avatar">
+    </a>
+</div>
+{{- end }}
+
+<div class="site-title">
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+</div>
+
+<div class="site-description">
+    {{- if isset .Site.Params "subtitle" -}}
+    <p>{{ .Site.Params.Subtitle | markdownify }}</p>
+    {{- end -}}
+</div>
+
+{{- if .Site.Params.showMenu }}
+<nav class="site-nav">
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.main -}}
+    <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{- end }}
+</nav>
+{{- end }} 
