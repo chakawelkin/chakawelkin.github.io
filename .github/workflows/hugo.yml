@@ -35,14 +35,7 @@ jobs:
           extended: true
 
       - name: Build with Hugo
-        run: |
-          hugo --minify
-          echo "=== 构建完成，检查文件 ==="
-          ls -la public/
-          echo "=== 检查首页文件 ==="
-          ls -la public/index.html
-          echo "=== 检查文章目录 ==="
-          ls -la public/posts/
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -50,5 +43,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          commit_message: "Deploy Hugo site to Pages"
-          force_orphan: true 
+          commit_message: "Deploy Hugo site to Pages" 
