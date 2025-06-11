@@ -87,10 +87,9 @@ defaultContentLanguageInSubdir = false
     customText = ""
     powered = false
     theme = false
-
-  ShowFooter = false
-  ShowPoweredBy = false
-  ShowThemeInfo = false
+    showFooter = false
+    showPoweredBy = false
+    showThemeInfo = false
 
 [menu]
   [[menu.main]]
