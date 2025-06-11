@@ -98,4 +98,58 @@
 .post-tags a:hover {
     background: var(--accent);
     color: var(--entry);
+}
+
+/* 文章内容样式 */
+.post-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* 文章内容中的标题样式 */
+.post-content h1 {
+    font-size: 1.8rem;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+}
+
+.post-content h3 {
+    font-size: 1.3rem;
+}
+
+.post-content h4 {
+    font-size: 1.1rem;
+}
+
+.post-content h5, .post-content h6 {
+    font-size: 1rem;
+}
+
+/* 文章内容中的段落样式 */
+.post-content p {
+    margin: 1rem 0;
+}
+
+/* 文章内容中的列表样式 */
+.post-content ul, .post-content ol {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+/* 文章内容中的代码块样式 */
+.post-content pre {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+/* 文章内容中的引用样式 */
+.post-content blockquote {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid var(--border);
+    background: var(--entry);
 } 
