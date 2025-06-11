@@ -1,44 +1,44 @@
 /* 文章列表样式 */
-.article-list {
+.post-entry {
     margin: 0;
     padding: 0;
 }
 
-.article-list article {
+.post-entry article {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
 }
 
-.article-list article:last-child {
+.post-entry article:last-child {
     border-bottom: none;
 }
 
 /* 文章标题样式 */
-.article-title {
+.post-title {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 /* 文章元信息样式 */
-.article-meta {
+.post-meta {
     font-size: 0.9rem;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
 
 /* 文章摘要样式 */
-.article-summary {
+.post-summary {
     margin: 1rem 0;
     color: var(--secondary);
 }
 
 /* 标签样式 */
-.article-tags {
+.post-tags {
     margin-top: 1rem;
 }
 
-.article-tags a {
+.post-tags a {
     display: inline-block;
     padding: 0.2rem 0.5rem;
     margin: 0.2rem;
@@ -63,4 +63,39 @@
     text-align: center;
     color: var(--secondary);
     font-size: 0.9rem;
+}
+
+/* 文章卡片样式 */
+.post-entry {
+    background: var(--entry);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+}
+
+/* 文章标题链接样式 */
+.post-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--accent);
+}
+
+/* 文章元信息图标样式 */
+.post-meta i {
+    margin-right: 0.3rem;
+}
+
+/* 标签悬停效果 */
+.post-tags a:hover {
+    background: var(--accent);
+    color: var(--entry);
 } 
