@@ -46,3 +46,8 @@ theme = 'PaperMod'
     name = "搜索"
     url = "/search/"
     weight = 40
+
+# 添加首页配置
+[params.homeInfoParams]
+  Title = "欢迎来到我的博客"
+  Content = "这是一个使用 Hugo 和 PaperMod 主题创建的博客。"
