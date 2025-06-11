@@ -13,11 +13,16 @@ theme = 'PaperMod'
   ShowRssButtonInSectionTermList = true
   ShowWordCount = true
   ShowFullTextinRSS = true
-  search = true
+  # 启用搜索功能
   [params.search]
+    enabled = true
+    # 搜索索引文件路径
     index = "search.json"
+    # 搜索结果显示数量
     maxResults = 10
+    # 搜索高亮显示
     highlight = true
+    # 搜索匹配阈值（0-1之间，越小越精确）
     threshold = 0.3
 
 [menu]
