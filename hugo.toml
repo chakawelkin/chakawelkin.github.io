@@ -1,10 +1,11 @@
 baseURL = 'https://chakawelkin.github.io/'
-languageCode = 'zh-cn'
-title = '我的博客'
-theme = 'PaperMod'
+languageCode = 'zh-CN'
+title = 'ExflyBlog'
+theme = 'LoveIt'
+hasCJKLanguage = true
 
 # 添加默认内容语言
-defaultContentLanguage = 'zh-cn'
+defaultContentLanguage = 'zh-CN'
 defaultContentLanguageInSubdir = false
 
 # 添加输出格式配置
@@ -13,88 +14,68 @@ defaultContentLanguageInSubdir = false
 
 [params]
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowRssButtonInSectionTermList = true
-  ShowWordCount = true
-  ShowFullTextinRSS = true
-  # 禁用首页欢迎模块
-  ShowHomeInfo = false
-  # 启用搜索功能
-  [params.search]
-    enabled = true
-    # 搜索索引文件路径
-    index = "search.json"
-    # 搜索结果显示数量
-    maxResults = 10
-    # 搜索高亮显示
-    highlight = true
-    # 搜索匹配阈值（0-1之间，越小越精确）
-    threshold = 0.3
+  gitRepo = "https://github.com/chakawelkin/chakawelkin.github.io"
+  dateFormat = "2006-01-02"
+  title = "ExflyBlog"
+  description = "ExflyBlog, IT technology sharing, technology blog"
 
-  # 文章列表样式
-  [params.list]
-    # 显示文章摘要
-    ShowSummary = true
-    # 显示阅读时间
-    ShowReadingTime = true
-    # 显示文章日期
-    ShowDate = true
-    # 显示文章作者
-    ShowAuthor = false
-    # 显示文章字数
-    ShowWordCount = true
-    # 显示文章分类
-    ShowCategories = true
-    # 显示文章标签
-    ShowTags = true
+  [params.author]
+    name = "exfly"
+    email = "exflyg@gmail.com"
+    link = "https://github.com/exfly"
 
-  # 文章页面样式
-  [params.page]
-    # 显示文章目录
-    ShowToc = true
-    # 显示文章分享按钮
-    ShowShareButtons = true
-    # 显示文章导航
-    ShowPostNavLinks = true
-    # 显示文章面包屑
-    ShowBreadCrumbs = true
-    # 显示文章字数
-    ShowWordCount = true
-    # 显示文章阅读时间
-    ShowReadingTime = true
-    # 显示文章作者
-    ShowAuthor = false
-    # 显示文章日期
-    ShowDate = true
-    # 显示文章分类
-    ShowCategories = true
-    # 显示文章标签
-    ShowTags = true
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = ""
+      name = "ExflyBlog"
+      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      post = ""
+      typeit = true
 
-  # 时间格式配置
-  [params.format]
-    date = "2006年01月02日"
-    lastmod = "2006年01月02日"
-    readingTime = "预计阅读 %d 分钟"
-
-  # 隐藏主题信息
   [params.footer]
-    since = 2024
-    customText = ""
-    powered = false
-    theme = false
-    showFooter = false
-    showPoweredBy = false
-    showThemeInfo = false
+    enable = true
+    custom = ""
+    hugo = true
+    copyright = true
+    author = true
+    since = 2019
+    icp = ""
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  [params.search]
+    enable = true
+    type = "algolia"
+    contentLength = 4000
+    placeholder = "搜索文章标题或内容..."
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = "index.zh-cn"
+      appID = "PASDMWALPK"
+      searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      gravatar = ""
+      avatarURL = "/media/img/avatar.jpg"
+      title = "ExflyBlog"
+      subtitle = "Keep It Simple & Stupid."
+      typeit = true
+      social = true
+      cv = ""
+    [params.home.posts]
+      enable = true
+      paginate = 6
 
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "文章"
+    name = "所有文章"
     url = "/posts/"
     weight = 10
   [[menu.main]]
@@ -103,12 +84,33 @@ defaultContentLanguageInSubdir = false
     url = "/tags/"
     weight = 20
   [[menu.main]]
-    identifier = "categories"
-    name = "分类"
-    url = "/categories/"
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
     weight = 30
   [[menu.main]]
-    identifier = "search"
-    name = "搜索"
-    url = "/search/"
+    identifier = "github"
+    name = ""
+    url = "https://github.com/exfly"
+    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+    target = "_blank"
+    rel = "noopener noreffer"
     weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = ""
+    url = "javascript:void(0);"
+    pre = "<i class='fas fa-search fa-fw' aria-hidden='true'></i>"
+    weight = 50
+  [[menu.main]]
+    identifier = "theme-switch"
+    name = ""
+    url = "javascript:void(0);"
+    pre = "<i class='fas fa-adjust fa-fw' aria-hidden='true'></i>"
+    weight = 60
+  [[menu.main]]
+    identifier = "language"
+    name = ""
+    url = "javascript:void(0);"
+    pre = "<i class='fa fa-globe' aria-hidden='true'></i>"
+    weight = 70
