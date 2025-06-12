@@ -78,19 +78,19 @@ defaultContentLanguage = "zh-cn"
   languageCode = "zh-CN"
   languageName = "简体中文"
   hasCJKLanguage = true
-  [languages.zh-cn.menu.main]
+  [[languages.zh-cn.menu.main]]
     weight = 1
     identifier = "posts"
     name = "文章"
     url = "/posts/"
     title = "文章"
-  [languages.zh-cn.menu.main]
+  [[languages.zh-cn.menu.main]]
     weight = 2
     identifier = "tags"
     name = "标签"
     url = "/tags/"
     title = "标签"
-  [languages.zh-cn.menu.main]
+  [[languages.zh-cn.menu.main]]
     weight = 3
     identifier = "categories"
     name = "分类"
