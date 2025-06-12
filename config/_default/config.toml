@@ -1,0 +1,61 @@
+baseURL = "/"
+title = "我的博客"
+theme = "LoveIt"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+languageName = "简体中文"
+hasCJKLanguage = true
+
+[params]
+  description = "一个简洁、优雅且高效的 Hugo 博客"
+  avatar = "images/avatar.png"
+  homeHeaderImage = "/theme-documentation-basics/featured-image.jpg"
+  subtitle = "探索 Hugo - LoveIt 主题"
+  defaultTheme = "auto"
+  codeCopy = true
+  math = true
+  toc = true
+  summaryLength = 120
+
+  [params.author]
+    name = "chaka"
+    link = "https://github.com/chakawelkin"
+
+  [params.social]
+    GitHub = "chakawelkin"
+    Email = "chakawelkin@gemail.com"
+    RSS = true
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "文章"
+    url = "/posts/"
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "标签"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = ""
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+    noClasses = false 

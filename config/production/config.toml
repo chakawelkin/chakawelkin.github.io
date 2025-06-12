@@ -1,0 +1,11 @@
+baseURL = "https://chakawelkin.github.io/"
+
+[params.page.comment]
+  enable = true
+
+[params.page.comment.gitalk]
+  enable = true
+  owner = "chakawelkin"
+  repo = "chakawelkin-comments"
+  clientId = "{{ getenv "GITALK_CLIENT_ID" }}"
+  clientSecret = "{{ getenv "GITALK_CLIENT_SECRET" }}"
