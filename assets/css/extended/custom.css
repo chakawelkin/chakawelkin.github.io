@@ -10,6 +10,7 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
     padding-right: 150px;
+    min-height: 100px;
 }
 
 .post-entry article:last-child {
@@ -40,7 +41,7 @@
 .post-tags {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
