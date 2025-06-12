@@ -16,27 +16,6 @@ hasCJKLanguage = true
 # 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 
-# 菜单配置
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    title = "文章"
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    name = "标签"
-    url = "/tags/"
-    title = "标签"
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    name = "分类"
-    url = "/categories/"
-    title = "分类"
-
 # Hugo 解析文档的配置
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
