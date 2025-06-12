@@ -29,7 +29,9 @@ defaultContentLanguage = "zh-cn"
 
 [params]
   # 网站作者
-  author = "Chaka"
+  [params.author]
+    name = "Chaka"
+    link = "https://github.com/chakawelkin"
   # 网站描述
   description = "Chaka 的个人博客"
   # 网站主页信息
