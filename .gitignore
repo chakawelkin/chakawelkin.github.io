@@ -1,3 +1,13 @@
 .env
 hugo.dev.toml
-config/development/ 
+config/development/
+
+# Hugo default output directory
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride 
