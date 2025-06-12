@@ -1,6 +1,6 @@
 baseURL = 'https://chakawelkin.github.io/'
 languageCode = 'zh-CN'
-title = 'ExflyBlog'
+title = 'ChakaBlog'
 theme = 'LoveIt'
 hasCJKLanguage = true
 defaultContentLanguage = 'zh-cn'
@@ -13,8 +13,8 @@ defaultContentLanguageInSubdir = false
   defaultTheme = "auto"
   gitRepo = "https://github.com/chakawelkin/chakawelkin.github.io"
   dateFormat = "2006-01-02"
-  title = "ExflyBlog"
-  description = "ExflyBlog, IT technology sharing, technology blog"
+  title = "ChakaBlog"
+  description = "ChakaBlog, IT technology sharing, technology blog"
 
   [params.author]
     name = "exfly"
@@ -26,7 +26,7 @@ defaultContentLanguageInSubdir = false
     mobileMode = "auto"
     [params.header.title]
       logo = ""
-      name = "ExflyBlog"
+      name = "ChakaBlog"
       pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
       post = ""
       typeit = true
@@ -60,7 +60,7 @@ defaultContentLanguageInSubdir = false
       enable = true
       gravatar = ""
       avatarURL = "/media/img/avatar.jpg"
-      title = "ExflyBlog"
+      title = "ChakaBlog"
       subtitle = "Keep It Simple & Stupid."
       typeit = true
       social = true
