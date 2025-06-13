@@ -6,7 +6,7 @@ baseURL = "https://chakawelkin.github.io/"
 [params.page.comment.giscus]
   enable = true
   repo = "chakawelkin/chakawelkin.github.io"
-  repoId = "1000123646"
+  repoId = "R_kgDOO5ys_g"
   category = "General"
   categoryId = "DIC_kwDOO5ys_s4CrcSH"
   mapping = "pathname"
