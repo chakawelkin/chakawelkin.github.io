@@ -7,5 +7,5 @@ baseURL = "https://chakawelkin.github.io/"
   enable = true
   owner = "chakawelkin"
   repo = "chakawelkin-comments"
-  clientId = "{{ getenv "GITALK_CLIENT_ID" }}"
-  clientSecret = "{{ getenv "GITALK_CLIENT_SECRET" }}"
+  clientId = ""
+  clientSecret = ""
