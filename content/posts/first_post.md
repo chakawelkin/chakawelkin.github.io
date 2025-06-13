@@ -3,6 +3,7 @@ date = '2025-06-12T16:26:38+08:00'
 draft = false
 title = 'First_post'
 tags = ["Hugo", "教程"]
+categories = ["Linux", "网络"]
 
 +++
 
