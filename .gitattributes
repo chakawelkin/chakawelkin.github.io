@@ -1,4 +1,1 @@
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.js filter=lfs diff=lfs merge=lfs -text
-*.js.map filter=lfs diff=lfs merge=lfs -text
+# 移除所有 Git LFS 配置
