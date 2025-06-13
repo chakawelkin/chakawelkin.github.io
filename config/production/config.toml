@@ -3,9 +3,16 @@ baseURL = "https://chakawelkin.github.io/"
 [params.page.comment]
   enable = true
 
-[params.page.comment.gitalk]
+[params.page.comment.giscus]
   enable = true
-  owner = "chakawelkin"
-  repo = "chakawelkin-comments"
-  clientId = ""
-  clientSecret = ""
+  repo = "chakawelkin/chakawelkin.github.io"
+  repoId = "1000123646"
+  category = "Announcements"
+  categoryId = ""
+  mapping = "pathname"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  lightTheme = "light"
+  darkTheme = "dark"
+  lazyLoading = false
