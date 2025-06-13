@@ -23,6 +23,11 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      
+      - name: Debug
+        run: |
+          echo "GITALK_CLIENT_ID: $GITALK_CLIENT_ID"
+          echo "GITALK_CLIENT_SECRET: $GITALK_CLIENT_SECRET"
 
       - name: Build with Hugo
         env:
