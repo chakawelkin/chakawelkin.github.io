@@ -10,4 +10,5 @@ config/development/
 # macOS system files
 .DS_Store
 .AppleDouble
-.LSOverride 
+.LSOverride
+/.idea
